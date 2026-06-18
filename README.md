@@ -29,6 +29,39 @@ If you live in the terminal and want AI that actually does the work, this is you
 
 ---
 
+## 🎥 See it in action
+
+[![BBARIT Terminal — intro & demo](https://img.youtube.com/vi/5IBCLQHED3M/hqdefault.jpg)](https://youtu.be/5IBCLQHED3M)
+
+▶️ **[Watch the intro & demo](https://youtu.be/5IBCLQHED3M)**
+
+<details>
+<summary><b>📖 Full product tour (English walkthrough)</b></summary>
+
+**Projects, fast** — Open projects from local disk, over SSH, or open a server directly. All your projects sit in one place, laid out on the left; jump between them with a shortcut (Ctrl/Cmd+Shift). **Ctrl+P quick open searches across *all* projects** (not just the current one) and is extremely fast. Reorder by drag-and-drop, pin favorites to the top, restyle instantly.
+
+**Layouts & monitor mode** — Switch to terminal-only, rearrange terminal panes (move/add/remove), see live-terminal dots. New **Monitor mode** shows everything at a glance — like CCTV for your services — hopping across projects in real time via shortcuts.
+
+**Every file viewer/editor built in** — Markdown-first (viewer with code blocks, tables, images, color-customizable emoji), Mermaid charts, HTML viewer, images (BMP/GIF/ICO/JPG/PNG), video (MP4), audio (MP3), **PDF with editing**, **Word/PowerPoint/Excel** (Excel functions too), **EPUB** whole-book viewer/creator, SQLite, and all code editors (JSON tree view, JS, Java, text…). You never leave the app to open a file.
+
+**Knowledge: Karpathy Wiki & skills** — Auto-generates a Karpathy-style Wiki; skills library you can run; **commands saved to a database**; "summarize recent activity" reminds you what you did; clear-input button; send a dependency-tree structure diagram to the agent. Works with Claude, Codex, OpenCode, Gemini, Kimi, Ollama (local too).
+
+**Git, tasks & automation** — Full Git panel (history, branches, remotes, stash, tags; fetch/pull/push). Global search/quick open. **Gantt (tree) chart** linking tasks to projects/terminals. **Kanban** that **imports GitHub/Linear issues** → send a card to the terminal so the agent fixes it (one-click support automation), with doc/project linking and drag-and-drop.
+
+**Servers, hub & voice** — Server monitoring (per-process logs, memory/CPU, health/network/security/docker/disk checks). Hub shows Linear/Slack/GitHub at once. Voice input via right Alt/Option key (macOS). Skills Studio installs skill packs (180+) in one click.
+
+**Settings** — Font size, scrollback (fewer = faster), max terminals per row, themes, editor options, fully customizable keybindings, hub connections (Linear/Slack/GitHub) per project or globally.
+
+**Remote access — Web Terminal 🌐** — Click the Web Terminal, copy the link, open it elsewhere in a **browser — even on mobile**. This is remote access: drive your terminal/agents on this machine from anywhere.
+
+**Remote messaging** — Telegram, Discord, Slack (per chat channel, mirror/drive sessions). Language settings included.
+
+*(Translated to English from the founder's Korean intro video.)*
+
+</details>
+
+---
+
 ## ✨ Headline: 🦌 Broker Agent — your AI pair-dev team
 
 Press one button and BBARIT opens **two real terminals** — a **Developer** (e.g. Claude) and a **Reviewer** (e.g. Codex) — and acts as the **broker** between them.
