@@ -83,7 +83,13 @@ It's not a chat wrapper. It's a **cockpit for shipping with AI**.
 
 ▶️ **[Watch the intro & demo](https://youtu.be/5IBCLQHED3M)**
 
-📣 **Featured by creators** — [creator walkthrough on Instagram](https://www.instagram.com/reels/DVwZsc3gvIx/)
+### 📣 As featured by creators
+
+> ## "99% of AI coding tools are too hard. **Octo Terminal is the 1%.**"
+>
+> — **[@aiexplained412](https://www.instagram.com/aiexplained412/)** on Instagram &nbsp;·&nbsp; ▶️ **[Watch the reel](https://www.instagram.com/reels/DVwZsc3gvIx/)**
+
+In the reel, the creator walks through why most AI coding tools are overwhelming — and shows how **Octo Terminal (now BBARIT Terminal)** strips that away: every AI agent and every dev tool in one native terminal, where you just say what you want and the AI does the work. It's the rare AI IDE built to be *easy*, not just powerful.
 
 ---
 
