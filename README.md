@@ -8,28 +8,70 @@
 
 Run **Claude · Codex · Gemini · Kimi · Qwen · OpenCode · Ollama** side by side, pair two of them into a **self-reviewing dev team that ships while you sleep**, and never leave the terminal — all from a fast native desktop app.
 
-Free with GitHub sign-in · auto-updating · built with Tauri + Rust + React.
+Free with GitHub sign-in · auto-updating · built with **Tauri + Rust + React**.
 
 ### ⬇️ Download
 
 | Platform | Get it |
 | --- | --- |
-| 🍎 **macOS** (Apple Silicon) | [Latest release](https://github.com/bbarit/terminal/releases/latest) · [bbarit.com](https://bbarit.com) |
-| 🪟 **Windows** 10/11 | [Latest release](https://github.com/bbarit/terminal-win/releases/latest) · [bbarit.com](https://bbarit.com) |
+| 🍎 **macOS** (Apple Silicon · M1+) | [Latest release](https://github.com/bbarit/terminal/releases/latest) · [bbarit.com](https://bbarit.com) |
+| 🪟 **Windows** 10 / 11 (64-bit) | [Latest release](https://github.com/bbarit/terminal-win/releases/latest) · [bbarit.com](https://bbarit.com) |
 
 > macOS repo: **[bbarit/terminal](https://github.com/bbarit/terminal)** · Windows repo: **[bbarit/terminal-win](https://github.com/bbarit/terminal-win)**
 
 </div>
 
-<!-- SEO: octo terminal, octoterminal, 옥토터미널, bbarit terminal, 빠릿터미널, ultimate ai vibe coding, vibe coding terminal, ai terminal, ai coding ide, claude code terminal, codex terminal, gemini cli, kimi cli, ollama terminal, ai pair programming, autonomous ai coding, ai dev review pair, multi ai terminal, ai agent orchestration, mcp server client, ssh terminal, web terminal cloudflare, tauri rust terminal, xterm webgl, monaco editor ide, knowledge base wiki, kanban gantt, nanobanana ai image studio, macos terminal, windows terminal, developer productivity, ship with ai -->
+<!-- SEO: octo terminal, octoterminal, 옥토터미널, bbarit terminal, 빠릿터미널, ultimate ai vibe coding, vibe coding terminal, ai terminal, ai coding ide, claude code terminal, codex terminal, gemini cli, kimi cli, ollama terminal, ai pair programming, autonomous ai coding, ai dev review pair, multi ai terminal, ai agent orchestration, mcp server client, ssh terminal, web terminal cloudflare, tauri rust terminal, xterm webgl, monaco editor ide, knowledge base wiki, kanban gantt, macos terminal, windows terminal, developer productivity, ship with ai -->
 
 ---
 
-## Why BBARIT?
+## 📖 Table of contents
 
-Most "AI IDEs" lock you into one model and one workflow. BBARIT is a **native terminal** that puts *every* AI coding agent in one place, gives them real tools (PTY, git, editors, databases, MCP, a browser), and lets them **work as a team** — coordinated by a transparent **mechanical broker**, backed by a knowledge base that gets smarter every session.
+- [Why BBARIT?](#-why-bbarit)
+- [Who it's for](#-who-its-for)
+- [See it in action](#-see-it-in-action)
+- [🦌 Broker Agent — your autonomous AI dev/review team](#-headline--broker-agent--your-autonomous-ai-devreview-team)
+- [Multi-AI terminals](#-multi-ai-terminals)
+- [Terminal & editor](#-terminal--editor)
+- [Knowledge that compounds](#-knowledge-that-compounds)
+- [Developer tools](#-developer-tools)
+- [Remote, web & team](#-remote-web--team)
+- [Built-in browser + automation](#-built-in-browser--automation)
+- [Full feature list](#-full-feature-list)
+- [How it's built](#-how-its-built)
+- [Quick start](#-quick-start)
+- [Requirements & install](#-requirements)
+- [FAQ](#-faq)
+- [Support & community](#-support--community)
 
-If you live in the terminal and want AI that actually *does the work* — designs, builds, tests, reviews, and merges — this is your cockpit.
+---
+
+## 🤔 Why BBARIT?
+
+Most "AI IDEs" lock you into **one model** and **one workflow**, hide the AI behind a chat box, and still make you babysit every step. Meanwhile your real work is spread across a dozen terminals, a browser, an editor, a notes app, a Kanban board, and three SSH sessions.
+
+**BBARIT collapses all of that into one native terminal** — and then goes further: it puts *every* AI coding agent in the same window, gives them **real tools** (PTY, git, editors, databases, MCP, a browser), and lets two of them **work as an autonomous team** that designs, builds, tests, reviews, and merges — with a knowledge base that gets smarter every session.
+
+It's not a chat wrapper. It's a **cockpit for shipping with AI**.
+
+| The old way | With BBARIT |
+| --- | --- |
+| One AI model, take it or leave it | **10 AI CLIs** side by side, swap any time |
+| Copy-paste between AI and editor | Agents run in **real terminals** with full tool access |
+| You review every diff by hand | A **reviewer AI** reviews continuously; you approve merges |
+| Knowledge lost between sessions | **Karpathy Wiki** + self-improving rules compound over time |
+| 12 windows for 12 tools | **One window**: terminal · editor · git · notes · kanban · browser |
+| Tied to your desk | **Web terminal + Telegram/Discord/Slack** — drive it from your phone |
+
+---
+
+## 👤 Who it's for
+
+- **Solo builders & indie hackers** who want an AI team without hiring one — ship features while you focus on product.
+- **Vibe coders** who think out loud to an AI and want it to *actually do the work*, not just suggest.
+- **Terminal-native developers** who never want to leave the keyboard, but want modern tools (editors, git UI, search) one keypress away.
+- **Teams** who want shared Kanban, notes, and a knowledge base that syncs in real time.
+- **Remote / on-the-go** developers who need to check on long-running agents from a browser or phone.
 
 ---
 
@@ -39,83 +81,137 @@ If you live in the terminal and want AI that actually *does the work* — design
 
 ▶️ **[Watch the intro & demo](https://youtu.be/5IBCLQHED3M)**
 
+📣 **Featured by creators** — [creator walkthrough on Instagram](https://www.instagram.com/reels/DVwZsc3gvIx/)
+
 ---
 
-## ✨ Headline: 🦌 Broker Agent — your autonomous AI dev/review team
+## ✨ Headline — 🦌 Broker Agent — your autonomous AI dev/review team
 
-Press one button and BBARIT opens **two real terminals** — a **Developer** (e.g. Claude) and a **Reviewer** (e.g. Codex) — and runs a **mechanical broker** between them that mediates the whole dev↔review loop. You give the goal; the pair designs, builds, tests, reviews, and merges.
+Press one button (🦌) and BBARIT opens **two real terminals** — a **Developer** (e.g. Claude) and a **Reviewer** (e.g. Codex) — and runs a transparent **mechanical broker** between them that mediates the entire dev↔review loop. You give the goal; the pair designs, builds, tests, reviews, and merges. You approve.
 
-**How the loop works**
+### The loop, step by step
 
-1. The **developer** implements and **tests its own work**, keeps a project wiki, and appends a one-line `DONE` when a unit is genuinely finished.
-2. The **broker** sees that signal, reads the `git diff`, **judges it mechanically** (source-growth, code-graph blast radius, sensitivity patterns, requirements progress — *no extra LLM cost*), and hands the change to the reviewer.
-3. The **reviewer** reviews (Linus-style: direct, specific) and replies `APPROVED` or `REWORK: …` — and **owns the rework loop** until it's right.
-4. On `APPROVED`, the broker **auto-commits and merges the isolated branch** (only if git checks pass); a failed merge is escalated to you.
+1. **You give the developer a task** in plain language — just like talking to Claude normally.
+2. **The developer implements and tests its own work**, keeps a project wiki, and appends a one-line `DONE:` to a feed file when a unit is genuinely finished.
+3. **The broker sees that signal**, reads the `git diff`, and **judges it mechanically** — source-growth vs a baseline SHA, code-graph blast radius, sensitivity patterns (secrets/auth/destructive/SQL/payment), and requirements progress. *No extra LLM calls, zero token cost.*
+4. **The broker hands the change to the reviewer** — and delivers the diff content **inline**, so the reviewer doesn't burn tokens re-opening files.
+5. **The reviewer reviews** (Linus-style: direct, specific) and replies `APPROVED` or `REWORK: …`. It **owns the rework loop**, re-issuing instructions until the developer actually fixes it.
+6. **On `APPROVED`, the broker auto-commits and merges** the harness's isolated branch — only if git checks pass. A failed merge is **escalated to you**, never forced.
 
-**What makes it different**
+### What makes it genuinely different
 
-- **No screen-scraping.** The two agents coordinate purely through **git** and the **Karpathy Wiki** — everything is tracked, reproducible, and reviewable.
-- **The broker does the reading for them.** It reads diffs and review notes and **delivers the content directly** to each agent, so they spend tokens on work, not on opening files.
-- **Worktree isolation.** Each harness runs on its own git branch + worktree, so it never pollutes your working tree — run **several features in parallel** and merge them later.
-- **Multi-harness manager.** A full-screen workspace with a **project → harness tree**: spin up many dev/review pairs across projects, switch between them, each with its **own live status window** (Working / Done), broker log, and two terminals.
-- **Hot-swap models any time.** Change the developer or reviewer agent mid-session; the new agent reads the wiki + git and **continues** the in-progress work.
-- **Session persistence.** Harnesses are saved and **auto-restore on reopen/restart**, continuing exactly where they left off — including queued auto-merges.
-- **Requirements traceability (RTM).** Every requirement is a tracked row, verified against *real* code + tests before anything is called done.
-- **Self-improving.** Recurring review findings are promoted into permanent design rules, so the same mistakes get caught earlier next time.
-- **Tiered knowledge.** Project wiki → global wiki → *other projects' code* when stuck — learning your own patterns.
-- **You stay in control.** Agents propose; **merge & deploy require your approval.**
+- **🔍 Transparent, not a black box.** Two *visible* terminals. Every message, diff, and decision is tracked in **git + the Karpathy Wiki** — reproducible and auditable, never screen-scraped.
+- **🧠 Mechanical broker brain (LLM = 0).** The mediation logic is pure code — growth, impact, sensitivity, RTM — so coordination is free, fast, and deterministic.
+- **🌳 Worktree isolation.** Each harness runs on its own git branch + worktree (`.octo-tmp/broker-wt-…`). It **never touches your working tree**, so you can run **several features in parallel** and merge them later.
+- **🧩 Multi-harness manager.** A full-screen workspace with a **project → harness tree**: spin up many dev/review pairs across projects, switch between them, each with its **own live status window** (Working / Done), broker log, and two terminals.
+- **🔄 Hot-swap models mid-session.** Change the developer or reviewer agent any time; the new agent reads the wiki + git and **continues** the in-progress work — no restart from scratch.
+- **💾 Session persistence.** Harnesses are saved and **auto-restore on reopen/restart**, continuing exactly where they left off — including queued auto-merges.
+- **📋 Requirements traceability (RTM).** Every requirement is a tracked row, **verified against real code + real tests** before anything is called done.
+- **📈 Self-improving.** Recurring review findings are promoted into **permanent design rules**, so the same mistakes get caught earlier next time.
+- **🪜 Tiered knowledge.** Project wiki → global wiki → *other projects' code* when stuck — learning *your* patterns and conventions.
+- **🛑 You stay in control.** Agents propose; **merge & deploy require your approval.** Always.
 
-> One click → a Claude+Codex pair that designs, builds, tests, reviews, and records — while you just give the goal.
+> **One click → a Claude+Codex pair that designs, builds, tests, reviews, and records — while you just give the goal.**
 
 ---
 
 ## 🤖 Multi-AI terminals
 
-- First-class support for **Claude Code, Codex, Gemini, Kimi, Qwen, Cursor, OpenCode, Ollama, Pi, Reasonix** — each in its own PTY session with independent model / flags / autonomy mode.
-- Per-project agent settings, autonomy modes (normal / auto-accept / full-auto / yolo), and one-key switching.
-- **AI Roundtable** (multi-model debate) and **Orchestra / LangGraph** workflow pipelines for decompose → fan-out → synthesize.
+BBARIT speaks every major AI coding CLI fluently — each in its own real PTY session, with independent model, flags, and autonomy mode.
+
+| Agent | Good at |
+| --- | --- |
+| **Claude Code** | Deep reasoning, large refactors, planning |
+| **Codex** | Code generation & review, fast iteration |
+| **Gemini** | Multimodal, long context |
+| **Kimi** | CJK-optimized, long documents |
+| **Qwen** | Open-source, strong coding |
+| **Cursor / OpenCode** | Editor-style code workflows |
+| **Ollama** | **Local, private** models — no data leaves your machine |
+| **Pi / Reasonix** | Extended reasoning |
+
+- **Per-project agent settings** — different model/flags per project.
+- **Autonomy modes** — normal · auto-accept · full-auto · yolo, switchable per terminal.
+- **AI Roundtable** — have multiple models debate a question and compare answers.
+- **Orchestra / LangGraph pipelines** — decompose a goal → run sub-agents in parallel → synthesize, with checkpointing so you can resume mid-flow.
+
+---
 
 ## 🖥️ Terminal & editor
 
-- Real **PTY** terminal (portable-pty + Rust) with **WebGL** rendering, Unicode 11, ligatures, copy-on-select & right-click copy/paste.
-- Multi-project, multi-terminal: dozens of projects, each with its own terminals, **resizable split panes** (tree layout), tabs, themes & fonts.
-- First-class **CJK / IME** input (Korean / Chinese / Japanese) done right, with UTF-8 shells out of the box.
-- Built-in editor (**Monaco** + Vim + Emmet + Prettier) and viewers for **Markdown, PDF (with editing), Word, PowerPoint, Excel, EPUB, SQLite, Mermaid, images, video & audio** — you never leave the app to open a file.
+**A real terminal — not a web emulation.** Built on `portable-pty` + Rust, rendered with WebGL.
 
-## 🛠️ Developer tools
+- **Multi-project, multi-terminal** — open dozens of projects, each with its own terminals, themes, and fonts. Switch instantly with `Ctrl/Cmd+Shift`. **`Ctrl/Cmd+P` quick-open searches across *all* projects** and is blazing fast.
+- **Split panes** — resizable tree layout, tabs, horizontal/vertical/grid/tile — run an agent in one pane, your dev server in another, a reviewer in a third.
+- **Monitor mode** — a CCTV-style overview of every service across every project, with live activity dots.
+- **WebGL rendering** — GPU-accelerated, Unicode 11, ligatures, true color, 75+ themes, custom coding fonts.
+- **First-class CJK / IME** — Korean / Chinese / Japanese composition done right, with **UTF-8 shells out of the box**.
+- **Copy that just works** — copy-on-select, right-click copy/paste, search, click-to-open links.
 
-- **Git panel** — status, diff, history, branches, stashes, tags, worktrees, merge.
-- **Code search** — hybrid BM25 + semantic over your source, plus a code-graph (defs / callers / impact).
-- **Tasks** — global Kanban, Todo, and a **Gantt planner** that links tasks to projects/terminals; **imports GitHub & Linear issues** → send a card to a terminal so the agent fixes it.
-- **MCP** — connect Model Context Protocol servers, with a built-in **browser MCP bridge** + 100+ curated presets.
-- **Database** — MySQL & PostgreSQL with schema browsing.
-- **PM2 / process** monitoring with AI anomaly detection, and a server Hub.
+**Every file viewer & editor built in** — you never leave the app to open a file:
+
+| Type | What you get |
+| --- | --- |
+| **Code** | Monaco editor — Vim mode, Emmet, Prettier, bracket colorization, 30+ languages |
+| **Markdown** | WYSIWYG (Tiptap) + raw source, tables, Mermaid, color emoji |
+| **PDF** | Full viewer **with editing** + text selection/export |
+| **Office** | Word, PowerPoint, **Excel (with functions)** |
+| **EPUB** | Whole-book reader **and creator** (export Markdown → EPUB) |
+| **Data** | SQLite browser, JSON tree view |
+| **Media** | Images (BMP/GIF/ICO/JPG/PNG + crop/edit), video (MP4), audio (MP3) |
+| **Diagrams** | Mermaid live preview |
+
+---
 
 ## 📚 Knowledge that compounds
 
-- **Karpathy Wiki** — a structured, two-tier (project + global) knowledge base your agents read first and write back to; kept small with per-topic files and auto-archiving.
-- **Notes / knowledge graph** — markdown vault with wikilinks, backlinks, tags, and an Obsidian-style graph view.
-- **Skills library** — thousands of curated skills, GitHub skill-pack import, and a built-in **Karpathy guidelines** pack (think-before-coding, simplicity, surgical changes, goal-driven).
+- **Karpathy Wiki** — a structured, **two-tier (project + global)** knowledge base your agents read first and write back to. Kept small with per-topic files and **auto-archiving**, so it never bloats into one giant document.
+- **Notes / knowledge graph** — a markdown vault with **wikilinks, backlinks, tags**, and an Obsidian-style **graph view** (4 layouts, minimap, glow). AI can auto-generate and auto-organize notes.
+- **Skills library** — thousands of curated skills, **GitHub skill-pack import**, parameterized templates with `{{variables}}`, and one-click run. Includes the built-in **Karpathy guidelines** pack (think-before-coding, simplicity, surgical changes, goal-driven).
+- **Prompt library** — save, favorite, and reuse your best prompts across projects.
+- **Self-improving harness** — background review distills recurring lessons into durable rules.
 
-## 🔌 Integrations & remote
+---
 
-- **Web Terminal** — open a full terminal, file explorer, and editor **from any browser** (phone or desktop) over a **Cloudflare tunnel**.
-- **Telegram · Discord · Slack** — mirror terminal I/O and drive sessions remotely from your phone (passwords auto-masked).
-- **Real-time Collab** — share a room code; **Kanban, notes, chat, browser URL, and bookmarks sync live** across your team via WebSocket + Cloudflare tunnel.
-- **GitHub · Linear** unified Hub, full **SSH** remote-project terminals, and a built-in **Chromium browser** with an AI toolbar (inspect, console/network, page→Markdown, AI-fix).
+## 🛠️ Developer tools
 
-## 🎨 Media, design & more
+- **Git panel** — status, diff, history, branches, stashes, tags, **worktrees**, merge; one-click worktree for features or harnesses.
+- **Code search** — hybrid **BM25 + semantic** over your source, plus a **code-graph** (`defs` / `callers` / `impact` with risk scoring) — the same engine the broker uses to judge change blast-radius.
+- **Tasks** — global **Kanban** (6 columns, 5 priorities), **Todo**, and a **Gantt planner** that links tasks to projects/terminals. **Imports GitHub & Linear issues** → send a card to a terminal so the agent fixes it (one-click support automation).
+- **MCP** — connect Model Context Protocol servers (form or JSON), browse/invoke tools, with a built-in **browser MCP bridge** and **100+ curated presets** (Gmail, Slack, Linear, Notion, GitHub, Postgres…).
+- **Database** — MySQL & PostgreSQL: connection test, schema browser, query runner; credentials stored locally.
+- **PM2 / process monitoring** — real-time CPU/memory gauges, log streaming, and **AI anomaly detection** (via Ollama) for SSH servers.
+- **AutoResearch** — a Karpathy-style autonomous ML-experiment panel.
 
-- **NanoBanana AI Studio** — 16+ design services in one panel (app icons, banners, logos, product/ad images, ad videos, cartoons, interiors, 360° product spins, web-page generation) powered by Gemini / Imagen / Veo.
-- Screen capture (region select), clipboard image paste straight into the terminal, native video editor.
-- Command palette, fully configurable keybindings (Octo / VSCode / IntelliJ presets), voice input (Whisper), 8 UI languages.
+---
+
+## 🔌 Remote, web & team
+
+- **🌐 Web Terminal** — open a **full terminal, file explorer, and editor from any browser** (phone or desktop) over a **Cloudflare tunnel**. Real PTY, not an HTTP shim.
+- **👥 Real-time Collab** — share a 6-character room code; **Kanban, notes, chat, the browser URL, and bookmarks sync live** across your team via a built-in WebSocket server + Cloudflare tunnel.
+- **📱 Telegram · Discord · Slack** — mirror terminal I/O and drive sessions remotely from your phone (passwords auto-masked, per-project channels).
+- **🔑 SSH projects** — file tree, editor, and terminal work **transparently over SSH** — a remote project behaves exactly like a local one.
+- **🔗 GitHub · Linear Hub** — a unified, color-coded feed of all your issues, per-project.
+
+---
+
+## 🌐 Built-in browser + automation
+
+A real Chromium browser **inside** the app, wired to your agents:
+
+- **Pick** — click any element → CSS selector, XPath, computed styles → straight into an AI prompt.
+- **Live** — real-time console errors & page changes, auto-notified.
+- **Page → Markdown** — Readability + Turndown to convert any page to clean Markdown (and copy it).
+- **AI Fix** — auto-diagnose console errors + suggest fixes.
+- **Test** — auto-generate test cases from the live page.
+- **MCP bridge** — your Claude/Codex CLI can `navigate`, `screenshot`, `get_page_text`, `javascript_eval`, manage tabs, read console/network — all through the built-in browser.
 
 ---
 
 ## 📋 Full feature list
 
 <details>
-<summary><b>Everything in the box</b></summary>
+<summary><b>Everything in the box (click to expand)</b></summary>
 
 **AI agents & orchestration**
 - Multi-agent terminals: Claude Code, Codex, Gemini, Kimi, Qwen, Cursor, OpenCode, Ollama, Pi, Reasonix
@@ -126,13 +222,13 @@ Press one button and BBARIT opens **two real terminals** — a **Developer** (e.
 **Terminal & editor**
 - Native PTY (portable-pty + Rust), WebGL renderer, Unicode 11, ligatures, UTF-8 shells
 - Resizable split panes (tree layout), tabs, multi-project tabs with per-project themes & fonts (75+ themes)
-- Copy-on-select, right-click copy/paste, search, click-to-open links
-- Monaco editor (Vim, Emmet, Prettier) + viewers: Markdown, PDF (edit), Word, PowerPoint, Excel, EPUB (read & create), SQLite, Mermaid, JSON tree, images, video, audio
-- First-class CJK/IME (Korean/Chinese/Japanese), command palette, configurable keybindings & chords
+- Monitor mode (all-services overview), copy-on-select, right-click copy/paste, search, click-to-open links
+- Monaco editor (Vim, Emmet, Prettier) + viewers: Markdown, PDF (edit), Word, PowerPoint, Excel, EPUB (read & create), SQLite, Mermaid, JSON tree, images (+crop), video, audio
+- First-class CJK/IME (Korean/Chinese/Japanese), command palette, configurable keybindings (Octo / VSCode / IntelliJ presets)
 
 **Dev tools**
 - Git panel (status, diff, history, branches, stashes, tags, worktrees, merge)
-- Hybrid code search (BM25 + semantic) + code-graph (defs / callers / impact)
+- Hybrid code search (BM25 + semantic) + code-graph (defs / callers / impact + risk)
 - Kanban board, Todo, Gantt planner (global across projects), GitHub/Linear issue import → terminal
 - MCP server connections + built-in browser MCP bridge + 100+ presets
 - Database: MySQL & PostgreSQL with schema browsing
@@ -145,7 +241,7 @@ Press one button and BBARIT opens **two real terminals** — a **Developer** (e.
 - Self-improving harness (background review → durable rules), prompt library
 - AutoResearch (Karpathy-style autonomous ML experiment panel)
 
-**Integrations & remote**
+**Remote, web & team**
 - Web Terminal (browser access to terminal/files/editor via Cloudflare tunnel)
 - Real-time Collab (Kanban, notes, chat, browser URL, bookmarks sync) with room codes
 - Telegram, Discord, Slack (mirror terminal I/O + remote control)
@@ -153,12 +249,37 @@ Press one button and BBARIT opens **two real terminals** — a **Developer** (e.
 - Generic HTTP proxy (CORS-free) for integrations
 
 **Media & productivity**
-- NanoBanana AI design studio (16+ services: icons, banners, logos, ads, ad video, cartoons, interiors, 360°, web builder)
 - Screen capture (region select), clipboard image paste into terminal, native video editor
 - Voice input (Whisper), OS notifications, completion sounds, 8 UI languages
 - Auto-updater (Tauri), code-signed builds, collab session sharing
 
 </details>
+
+---
+
+## 🏗️ How it's built
+
+| Layer | Technology |
+| --- | --- |
+| **Desktop framework** | Tauri v2 (Rust backend + native webview) |
+| **Backend** | Rust · tokio · axum · portable-pty |
+| **Frontend** | React 19 · TypeScript · Vite 7 |
+| **Terminal** | xterm.js + WebGL addon, Unicode 11, FitAddon |
+| **Editors** | Monaco (code) · Tiptap/CodeMirror (markdown) |
+| **Agents** | LangGraph / LangChain workflow graphs with KV checkpointing |
+| **Real-time** | WebSocket (axum) + Cloudflare tunnels + KV store |
+
+Native and fast — small binary, low memory, real OS integration. Auto-updates via the Tauri updater; builds are code-signed (macOS Developer ID, Windows code-signed).
+
+---
+
+## 🚀 Quick start
+
+1. **Download & install** for your platform (links above), launch, and sign in with GitHub (free).
+2. **Open a project** — from local disk, over SSH, or open a server directly. All projects sit on the left; jump between them with a shortcut.
+3. **Start a terminal** and run any AI CLI you have installed — or just use it as a great native terminal.
+4. **Press 🦌 Broker Agent** to spin up a Developer + Reviewer pair. Give the developer a goal, and watch the pair build, test, review, and queue a merge for your approval.
+5. **Open the side panels** as you go — git, code search, notes/wiki, Kanban, and the built-in browser.
 
 ---
 
@@ -173,34 +294,39 @@ Press one button and BBARIT opens **two real terminals** — a **Developer** (e.
 
 ## 📥 Install
 
-1. Download the latest build for your platform:
+1. Download the latest build:
    - 🍎 **macOS (Apple Silicon)** → [github.com/bbarit/terminal/releases/latest](https://github.com/bbarit/terminal/releases/latest)
    - 🪟 **Windows 10/11** → [github.com/bbarit/terminal-win/releases/latest](https://github.com/bbarit/terminal-win/releases/latest)
    - or grab either from **[bbarit.com](https://bbarit.com)**
 2. Launch and sign in with GitHub (free license).
-3. Open a project folder and start a terminal — or press the **🦌 Broker Agent** button to spin up an AI pair.
+3. Open a project folder and start a terminal — or press **🦌 Broker Agent** to spin up an AI pair.
 
 Auto-updates are built in (Tauri updater) — you'll always get the latest.
 
 ## ❓ FAQ
 
-- **Do I need an API key?** You use the AI **CLIs** you already have installed; BBARIT runs them in real terminals. (Some optional studios like NanoBanana use your own Gemini key.)
-- **Which agents can the Broker Agent pair use?** Any installed CLI — Claude, Codex, Gemini, Kimi, Qwen, Ollama, and more — and you can hot-swap either role mid-session.
+- **Do I need an API key?** You use the AI **CLIs** you already have installed; BBARIT runs them in real terminals — no separate API key required.
+- **Which agents can the Broker Agent pair use?** Any installed CLI — Claude, Codex, Gemini, Kimi, Qwen, Ollama, and more — and you can **hot-swap either role mid-session**.
 - **Will it touch my repo without asking?** No — the Broker Agent works in an **isolated git worktree** and never merges or deploys without your approval. It only initializes git (with a notice) when needed for review.
-- **Can I run more than one AI pair at once?** Yes — the multi-harness manager runs several dev/review pairs in parallel, each isolated and individually monitored.
-- **Does it work over SSH / from my phone?** Yes — SSH projects work like local ones, and the Web Terminal + Telegram/Discord/Slack mirroring let you drive sessions from a browser or phone.
+- **My project has no git — does review still work?** Yes — the broker offers to initialize git so diff-based review works, and tells you before it does.
+- **Can I run more than one AI pair at once?** Yes — the multi-harness manager runs several dev/review pairs in parallel, each worktree-isolated and individually monitored.
+- **Does it work over SSH / from my phone?** Yes — SSH projects work like local ones, and the **Web Terminal** + Telegram/Discord/Slack mirroring let you drive sessions from a browser or phone.
+- **Is my code private with local models?** Run **Ollama** for fully local, on-device inference — nothing leaves your machine.
+- **Is this the same as Octo Terminal?** Yes — BBARIT Terminal is the **evolution of Octo Terminal (구 옥토터미널)**, rebuilt and renamed.
 
-## 🆘 Support
+## 🆘 Support & community
 
-- Issues: this repository's GitHub Issues
-- Contact: keke@kekeappa.com
+- **Issues:** this repository's GitHub Issues
+- **Contact:** keke@kekeappa.com
+- **Web:** [bbarit.com](https://bbarit.com)
 
 ---
 
 <div align="center">
 
+**🐙 BBARIT Terminal — 궁극의 AI 바이브코딩.**
 Maintained by Tenmiles Inc. · Built for developers who ship with AI.
 
-🍎 [bbarit/terminal](https://github.com/bbarit/terminal) · 🪟 [bbarit/terminal-win](https://github.com/bbarit/terminal-win) · 🌐 [bbarit.com](https://bbarit.com)
+🍎 [bbarit/terminal](https://github.com/bbarit/terminal) · 🪟 [bbarit/terminal-win](https://github.com/bbarit/terminal-win) · 🌐 [bbarit.com](https://bbarit.com) · ▶️ [Demo](https://youtu.be/5IBCLQHED3M)
 
 </div>
