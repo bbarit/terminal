@@ -1,10 +1,12 @@
 <div align="center">
 
-# 🐙 BBARIT Terminal (빠릿터미널)
+<img src="https://raw.githubusercontent.com/bbarit/terminal/main/images/bbarit-logo.png" width="140" alt="BBARIT" />
+
+# BBARIT Terminal
 
 ### The Ultimate AI Vibe-Coding IDE — every AI agent, every dev tool, one native terminal.
 
-> **궁극의 AI 바이브코딩** · *formerly **Octo Terminal** (구 옥토터미널)*
+> *formerly **Octo Terminal***
 
 Run **Claude · Codex · Gemini · Kimi · Qwen · OpenCode · Ollama** side by side, pair two of them into a **self-reviewing dev team that ships while you sleep**, and never leave the terminal — all from a fast native desktop app.
 
@@ -21,7 +23,7 @@ Free with GitHub sign-in · auto-updating · built with **Tauri + Rust + React**
 
 </div>
 
-<!-- SEO: octo terminal, octoterminal, 옥토터미널, bbarit terminal, 빠릿터미널, ultimate ai vibe coding, vibe coding terminal, ai terminal, ai coding ide, claude code terminal, codex terminal, gemini cli, kimi cli, ollama terminal, ai pair programming, autonomous ai coding, ai dev review pair, multi ai terminal, ai agent orchestration, mcp server client, ssh terminal, web terminal cloudflare, tauri rust terminal, xterm webgl, monaco editor ide, knowledge base wiki, kanban gantt, macos terminal, windows terminal, developer productivity, ship with ai -->
+<!-- SEO: octo terminal, octoterminal, bbarit terminal, ultimate ai vibe coding, vibe coding terminal, ai terminal, ai coding ide, claude code terminal, codex terminal, gemini cli, kimi cli, ollama terminal, ai pair programming, autonomous ai coding, ai dev review pair, multi ai terminal, ai agent orchestration, mcp server client, ssh terminal, web terminal cloudflare, tauri rust terminal, xterm webgl, monaco editor ide, knowledge base wiki, kanban gantt, macos terminal, windows terminal, developer productivity, ship with ai -->
 
 ---
 
@@ -35,7 +37,7 @@ Free with GitHub sign-in · auto-updating · built with **Tauri + Rust + React**
 - [Terminal & editor](#-terminal--editor)
 - [Knowledge that compounds](#-knowledge-that-compounds)
 - [Developer tools](#-developer-tools)
-- [Remote, web & team](#-remote-web--team)
+- [Remote & web access](#-remote--web-access)
 - [Built-in browser + automation](#-built-in-browser--automation)
 - [Full feature list](#-full-feature-list)
 - [How it's built](#-how-its-built)
@@ -70,7 +72,7 @@ It's not a chat wrapper. It's a **cockpit for shipping with AI**.
 - **Solo builders & indie hackers** who want an AI team without hiring one — ship features while you focus on product.
 - **Vibe coders** who think out loud to an AI and want it to *actually do the work*, not just suggest.
 - **Terminal-native developers** who never want to leave the keyboard, but want modern tools (editors, git UI, search) one keypress away.
-- **Teams** who want shared Kanban, notes, and a knowledge base that syncs in real time.
+- **Knowledge-driven developers** who want a wiki, notes, and design rules that compound across every project.
 - **Remote / on-the-go** developers who need to check on long-running agents from a browser or phone.
 
 ---
@@ -133,7 +135,7 @@ BBARIT speaks every major AI coding CLI fluently — each in its own real PTY se
 - **Per-project agent settings** — different model/flags per project.
 - **Autonomy modes** — normal · auto-accept · full-auto · yolo, switchable per terminal.
 - **AI Roundtable** — have multiple models debate a question and compare answers.
-- **Orchestra / LangGraph pipelines** — decompose a goal → run sub-agents in parallel → synthesize, with checkpointing so you can resume mid-flow.
+- **Orchestra** — orchestrate a multi-AI workflow across models from one panel.
 
 ---
 
@@ -185,10 +187,9 @@ BBARIT speaks every major AI coding CLI fluently — each in its own real PTY se
 
 ---
 
-## 🔌 Remote, web & team
+## 🔌 Remote & web access
 
 - **🌐 Web Terminal** — open a **full terminal, file explorer, and editor from any browser** (phone or desktop) over a **Cloudflare tunnel**. Real PTY, not an HTTP shim.
-- **👥 Real-time Collab** — share a 6-character room code; **Kanban, notes, chat, the browser URL, and bookmarks sync live** across your team via a built-in WebSocket server + Cloudflare tunnel.
 - **📱 Telegram · Discord · Slack** — mirror terminal I/O and drive sessions remotely from your phone (passwords auto-masked, per-project channels).
 - **🔑 SSH projects** — file tree, editor, and terminal work **transparently over SSH** — a remote project behaves exactly like a local one.
 - **🔗 GitHub · Linear Hub** — a unified, color-coded feed of all your issues, per-project.
@@ -216,7 +217,7 @@ A real Chromium browser **inside** the app, wired to your agents:
 **AI agents & orchestration**
 - Multi-agent terminals: Claude Code, Codex, Gemini, Kimi, Qwen, Cursor, OpenCode, Ollama, Pi, Reasonix
 - 🦌 **Broker Agent** — autonomous AI dev↔review pair: mechanical broker (no extra LLM cost), git + wiki channel, DONE-signal flow, worktree isolation + headless auto-merge, RTM requirements traceability, live status window, multi-harness manager, hot-swap models, session persistence/auto-resume, self-improving rules, human approval gate
-- AI Roundtable (multi-model debate), Orchestra / LangGraph workflow pipelines (decompose, fan-out, parallel, checkpointing)
+- AI Roundtable (multi-model debate), Orchestra multi-AI workflow orchestration
 - Per-project agent flags, models, autonomy modes (normal / auto-accept / full-auto / yolo)
 
 **Terminal & editor**
@@ -243,7 +244,6 @@ A real Chromium browser **inside** the app, wired to your agents:
 
 **Remote, web & team**
 - Web Terminal (browser access to terminal/files/editor via Cloudflare tunnel)
-- Real-time Collab (Kanban, notes, chat, browser URL, bookmarks sync) with room codes
 - Telegram, Discord, Slack (mirror terminal I/O + remote control)
 - GitHub, Linear unified Hub; SSH remote-project terminals; built-in Chromium browser + AI toolbar
 - Generic HTTP proxy (CORS-free) for integrations
@@ -251,7 +251,7 @@ A real Chromium browser **inside** the app, wired to your agents:
 **Media & productivity**
 - Screen capture (region select), clipboard image paste into terminal, native video editor
 - Voice input (Whisper), OS notifications, completion sounds, 8 UI languages
-- Auto-updater (Tauri), code-signed builds, collab session sharing
+- Auto-updater (Tauri), code-signed builds
 
 </details>
 
@@ -266,8 +266,8 @@ A real Chromium browser **inside** the app, wired to your agents:
 | **Frontend** | React 19 · TypeScript · Vite 7 |
 | **Terminal** | xterm.js + WebGL addon, Unicode 11, FitAddon |
 | **Editors** | Monaco (code) · Tiptap/CodeMirror (markdown) |
-| **Agents** | LangGraph / LangChain workflow graphs with KV checkpointing |
-| **Real-time** | WebSocket (axum) + Cloudflare tunnels + KV store |
+| **Orchestration** | Real AI CLIs in PTY sessions + Orchestra workflows |
+| **Remote** | Cloudflare tunnels (web terminal) + KV store |
 
 Native and fast — small binary, low memory, real OS integration. Auto-updates via the Tauri updater; builds are code-signed (macOS Developer ID, Windows code-signed).
 
@@ -312,7 +312,7 @@ Auto-updates are built in (Tauri updater) — you'll always get the latest.
 - **Can I run more than one AI pair at once?** Yes — the multi-harness manager runs several dev/review pairs in parallel, each worktree-isolated and individually monitored.
 - **Does it work over SSH / from my phone?** Yes — SSH projects work like local ones, and the **Web Terminal** + Telegram/Discord/Slack mirroring let you drive sessions from a browser or phone.
 - **Is my code private with local models?** Run **Ollama** for fully local, on-device inference — nothing leaves your machine.
-- **Is this the same as Octo Terminal?** Yes — BBARIT Terminal is the **evolution of Octo Terminal (구 옥토터미널)**, rebuilt and renamed.
+- **Is this the same as Octo Terminal?** Yes — BBARIT Terminal is the **evolution of Octo Terminal**, rebuilt and renamed.
 
 ## 🆘 Support & community
 
@@ -324,7 +324,7 @@ Auto-updates are built in (Tauri updater) — you'll always get the latest.
 
 <div align="center">
 
-**🐙 BBARIT Terminal — 궁극의 AI 바이브코딩.**
+**BBARIT Terminal — the ultimate AI vibe-coding IDE.**
 Maintained by Tenmiles Inc. · Built for developers who ship with AI.
 
 🍎 [bbarit/terminal](https://github.com/bbarit/terminal) · 🪟 [bbarit/terminal-win](https://github.com/bbarit/terminal-win) · 🌐 [bbarit.com](https://bbarit.com) · ▶️ [Demo](https://youtu.be/5IBCLQHED3M)
