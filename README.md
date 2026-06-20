@@ -4,11 +4,11 @@
 
 # BBARIT Terminal
 
-### The Ultimate AI Vibe-Coding IDE — every AI agent, every dev tool, one native terminal.
+### The Ultimate AI Vibe-Coding IDE — manage every codebase on one screen, with every AI agent and dev tool built in.
 
 > *formerly **Octo Terminal***
 
-Run **Claude · Codex · Gemini · Kimi · Qwen · OpenCode · Ollama** side by side, pair two of them into a **self-reviewing dev team that ships while you sleep**, and never leave the terminal — all from a fast native desktop app.
+**Open all your projects at once and switch between them instantly** — each with its own terminals, AI agents, and tools. Run **Claude · Codex · Gemini · Kimi · Qwen · OpenCode · Ollama** side by side, pair two of them into a **self-reviewing dev team that ships while you sleep**, and never leave the terminal — all from a fast native desktop app.
 
 Free with GitHub sign-in · auto-updating · built with **Tauri + Rust + React**.
 
@@ -32,6 +32,7 @@ Free with GitHub sign-in · auto-updating · built with **Tauri + Rust + React**
 - [Why BBARIT?](#-why-bbarit)
 - [Who it's for](#-who-its-for)
 - [See it in action](#-see-it-in-action)
+- [The core — every codebase on one screen](#-the-core--every-codebase-on-one-screen)
 - [🦌 Broker Agent — your autonomous AI dev/review team](#-headline--broker-agent--your-autonomous-ai-devreview-team)
 - [Multi-AI terminals](#-multi-ai-terminals)
 - [Terminal & editor](#-terminal--editor)
@@ -58,6 +59,7 @@ It's not a chat wrapper. It's a **cockpit for shipping with AI**.
 
 | The old way | With BBARIT |
 | --- | --- |
+| A dozen windows for a dozen repos | **Every codebase on one screen**, switch in a keypress |
 | One AI model, take it or leave it | **10 AI CLIs** side by side, swap any time |
 | Copy-paste between AI and editor | Agents run in **real terminals** with full tool access |
 | You review every diff by hand | A **reviewer AI** reviews continuously; you approve merges |
@@ -90,6 +92,23 @@ It's not a chat wrapper. It's a **cockpit for shipping with AI**.
 > — **[@aiexplained412](https://www.instagram.com/aiexplained412/)** on Instagram &nbsp;·&nbsp; ▶️ **[Watch the reel](https://www.instagram.com/reels/DVwZsc3gvIx/)**
 
 In the reel, the creator walks through why most AI coding tools are overwhelming — and shows how **Octo Terminal (now BBARIT Terminal)** strips that away: every AI agent and every dev tool in one native terminal, where you just say what you want and the AI does the work. It's the rare AI IDE built to be *easy*, not just powerful.
+
+---
+
+## 🗂️ The core — every codebase on one screen
+
+BBARIT's killer feature is **effortless multi-project, multi-codebase management**. Stop juggling a dozen windows — put every repo in one place and move between them at the speed of thought.
+
+> **The difference from VS Code:** VS Code opens a *separate window per folder*. BBARIT keeps **every codebase — and all of their terminals — on a single screen**, so you manage all your projects and AI agents without ever switching windows.
+
+- **All your repos, side by side.** Open dozens of projects at once; they sit in a list on the left. Jump between them instantly with a shortcut — no re-opening windows, no lost context.
+- **Every codebase's terminals, in one place.** Each project's terminals (dev servers, AI agents, logs) stay live and visible together — no window-hopping to check another repo's terminal.
+- **Each codebase is fully its own.** Every project keeps its own terminals, AI agents, theme, font, and working directory (local **or SSH**). Switch projects and everything follows.
+- **Search across *all* codebases.** `Ctrl/Cmd+P` quick-open searches *every* project at once — not just the current one — and it's instant.
+- **Split, stack & monitor.** Run a dev server in one pane, Claude in another, tests in a third; rearrange freely. **Monitor mode** gives you a CCTV-style overview of every service across every codebase, live.
+- **Drag, pin, restyle.** Reorder projects by drag-and-drop, pin favorites to the top, give each its own look.
+
+> **One window. Every codebase. Zero context-switching tax.**
 
 ---
 
