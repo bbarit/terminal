@@ -2,7 +2,9 @@
 
 # 🐙 BBARIT Terminal (빠릿터미널)
 
-### The all-in-one AI vibe-coding IDE — every AI agent, every dev tool, one native terminal.
+### The Ultimate AI Vibe-Coding IDE — every AI agent, every dev tool, one native terminal.
+
+> **궁극의 AI 바이브코딩** · *formerly **Octo Terminal** (구 옥토터미널)*
 
 Run **Claude · Codex · Gemini · Kimi · Qwen · OpenCode · Ollama** side by side, pair two of them into a **self-reviewing dev team that ships while you sleep**, and never leave the terminal — all from a fast native desktop app.
 
@@ -19,7 +21,7 @@ Free with GitHub sign-in · auto-updating · built with Tauri + Rust + React.
 
 </div>
 
-<!-- SEO: vibe coding terminal, ai terminal, ai coding ide, claude code terminal, codex terminal, gemini cli, kimi cli, ollama terminal, ai pair programming, autonomous ai coding, ai dev review pair, multi ai terminal, ai agent orchestration, mcp server client, ssh terminal, web terminal cloudflare, tauri rust terminal, xterm webgl, monaco editor ide, knowledge base wiki, kanban gantt, nanobanana ai image studio, macos terminal, windows terminal, developer productivity, ship with ai -->
+<!-- SEO: octo terminal, octoterminal, 옥토터미널, bbarit terminal, 빠릿터미널, ultimate ai vibe coding, vibe coding terminal, ai terminal, ai coding ide, claude code terminal, codex terminal, gemini cli, kimi cli, ollama terminal, ai pair programming, autonomous ai coding, ai dev review pair, multi ai terminal, ai agent orchestration, mcp server client, ssh terminal, web terminal cloudflare, tauri rust terminal, xterm webgl, monaco editor ide, knowledge base wiki, kanban gantt, nanobanana ai image studio, macos terminal, windows terminal, developer productivity, ship with ai -->
 
 ---
 
