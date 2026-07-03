@@ -256,6 +256,7 @@ A real Chromium browser **inside** the app, wired to your agents:
 <summary><b>Everything in the box (click to expand)</b></summary>
 
 **AI agents & orchestration**
+- ⚡ **BBARIT Agent** — built-in coding agent: **enforced verify loop** (it must run your tests/build and pass, judged by the exit code — not the model's word), line-anchored safe edits with read-before-edit and stale-file guards, per-change snapshots with instant rollback, catastrophic-command blocking (`rm -rf /`, `mkfs`, raw disk writes), BM25 + semantic code search & impact graph, task planner & plan mode, **297 expert personas**, parallel subagents & multi-agent teams, MCP client & lifecycle hooks, **37 providers / 1,000+ models** (log in with your ChatGPT or Claude subscription, use API keys, or run Ollama fully local), usable from the terminal TUI, the chat panel, or your phone
 - Multi-agent terminals: Claude Code, Codex, Gemini, Kimi, Qwen, Cursor, OpenCode, Ollama, Pi, Reasonix
 - 🦌 **Broker Agent** — autonomous AI dev↔review pair: mechanical broker (no extra LLM cost), git + wiki channel, DONE-signal flow, worktree isolation + headless auto-merge, RTM requirements traceability, live status window, multi-harness manager, hot-swap models, session persistence/auto-resume, self-improving rules, human approval gate
 - AI Roundtable (multi-model debate), Orchestra multi-AI workflow orchestration
@@ -319,8 +320,9 @@ Native and fast — small binary, low memory, real OS integration. Auto-updates 
 1. **Download & install** for your platform (links above), launch, and sign in with GitHub (free).
 2. **Open a project** — from local disk, over SSH, or open a server directly. All projects sit on the left; jump between them with a shortcut.
 3. **Start a terminal** and run any AI CLI you have installed — or just use it as a great native terminal.
-4. **Press 🦌 Broker Agent** to spin up a Developer + Reviewer pair. Give the developer a goal, and watch the pair build, test, review, and queue a merge for your approval.
-5. **Open the side panels** as you go — git, code search, notes/wiki, Kanban, and the built-in browser.
+4. **Talk to ⚡ BBARIT Agent** — the built-in coding agent. Give it a task in plain language; it reads, edits, runs your tests, and won't call the job done until they pass — with a rollback point for every change.
+5. **Press 🦌 Broker Agent** to spin up a Developer + Reviewer pair. Give the developer a goal, and watch the pair build, test, review, and queue a merge for your approval.
+6. **Open the side panels** as you go — git, code search, notes/wiki, Kanban, and the built-in browser.
 
 ---
 
@@ -346,7 +348,9 @@ Auto-updates are built in (Tauri updater) — you'll always get the latest.
 
 ## ❓ FAQ
 
-- **Do I need an API key?** You use the AI **CLIs** you already have installed; BBARIT runs them in real terminals — no separate API key required.
+- **What is ⚡ BBARIT Agent?** BBARIT's own built-in coding agent (빠릿에이전트). It reads, edits, runs and **verifies** your code — it runs your tests or build, reads the failures, and fixes them before it's allowed to finish. Every file change is snapshotted for instant rollback.
+- **Which models can BBARIT Agent use?** 37 providers and 1,000+ models — OpenAI, Anthropic, Google, Mistral, AWS Bedrock, Azure and more. Log in with your **ChatGPT or Claude subscription**, use API keys, or run **Ollama fully local**.
+- **Do I need an API key?** No — for external CLIs you use the AI **CLIs** you already have installed; BBARIT runs them in real terminals. For BBARIT Agent, a subscription login or a local Ollama model works too.
 - **Which agents can the Broker Agent pair use?** Any installed CLI — Claude, Codex, Gemini, Kimi, Qwen, Ollama, and more — and you can **hot-swap either role mid-session**.
 - **Will it touch my repo without asking?** No — the Broker Agent works in an **isolated git worktree** and never merges or deploys without your approval. It only initializes git (with a notice) when needed for review.
 - **My project has no git — does review still work?** Yes — the broker offers to initialize git so diff-based review works, and tells you before it does.
@@ -365,7 +369,7 @@ Auto-updates are built in (Tauri updater) — you'll always get the latest.
 
 <div align="center">
 
-**BBARIT Terminal — the ultimate AI vibe-coding IDE.**
+**BBARIT Terminal (빠릿터미널) — the free AI vibe coding IDE, terminal & coding agent, built 100% in Rust.**
 Maintained by Tenmiles Inc. · Built for developers who ship with AI.
 
 🍎 [bbarit/terminal](https://github.com/bbarit/terminal) · 🪟 [bbarit/terminal-win](https://github.com/bbarit/terminal-win) · 🌐 [bbarit.com](https://bbarit.com) · ▶️ [Demo](https://youtu.be/5IBCLQHED3M)
