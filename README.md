@@ -2,13 +2,13 @@
 
 <img src="https://raw.githubusercontent.com/bbarit/terminal/main/images/bbarit-logo.png" width="140" alt="BBARIT" />
 
-# BBARIT Terminal
+# BBARIT Terminal (빠릿터미널)
 
-### The Ultimate AI Vibe-Coding IDE — manage every codebase on one screen, with every AI agent and dev tool built in.
+### The free AI vibe coding IDE — AI terminal, IDE and coding agent unified, built 100% in Rust, with every AI agent, Office editor and dev tool built in.
 
 > *formerly **Octo Terminal***
 
-**Open all your projects at once and switch between them instantly** — each with its own terminals, AI agents, and tools. Run **Claude · Codex · Gemini · Kimi · Qwen · OpenCode · Ollama** side by side, pair two of them into a **self-reviewing dev team that ships while you sleep**, and never leave the terminal — all from a fast native desktop app.
+**Open all your projects at once and switch between them instantly** — each with its own terminals, AI agents, and tools. Run **Claude · Codex · Gemini · Kimi · Qwen · OpenCode · Ollama** side by side, pair two of them into a **self-reviewing dev team that ships while you sleep**, edit **Word / Excel / PowerPoint** files without leaving the app — all from a fast native desktop app.
 
 Free with GitHub sign-in · auto-updating · built with **Tauri + Rust + React**.
 
@@ -23,7 +23,7 @@ Free with GitHub sign-in · auto-updating · built with **Tauri + Rust + React**
 
 </div>
 
-<!-- SEO: octo terminal, octoterminal, bbarit terminal, ultimate ai vibe coding, vibe coding terminal, ai terminal, ai coding ide, claude code terminal, codex terminal, gemini cli, kimi cli, ollama terminal, ai pair programming, autonomous ai coding, ai dev review pair, multi ai terminal, ai agent orchestration, mcp server client, ssh terminal, web terminal cloudflare, tauri rust terminal, xterm webgl, monaco editor ide, knowledge base wiki, kanban gantt, macos terminal, windows terminal, developer productivity, ship with ai -->
+<!-- SEO: ai vibe coding ide, vibe coding tool, vibe coding tools free, vibe coding ide free, ai terminal, ai terminal for mac, ai terminal for windows, ai terminal app, ai coding ide free, best ai ide for coding free, vibe coding with claude, claude code ide, rust ide, built in rust, octo terminal, octoterminal, bbarit terminal, 빠릿터미널, 빠릿 터미널, 바이브코딩 툴, ai 코딩 툴, 클로드 코드, vibe coding terminal, ai coding agent, claude code terminal, codex terminal, gemini cli, kimi cli, ollama terminal, ai pair programming, autonomous ai coding, ai dev review pair, multi ai terminal, ai agent orchestration, mcp server client, word excel powerpoint editor, docx pptx xlsx editor, tauri rust terminal, xterm webgl, monaco editor ide, knowledge base wiki, kanban gantt, macos terminal, windows terminal, developer productivity, ship with ai -->
 
 ---
 
@@ -33,7 +33,8 @@ Free with GitHub sign-in · auto-updating · built with **Tauri + Rust + React**
 - [Who it's for](#-who-its-for)
 - [See it in action](#-see-it-in-action)
 - [The core — every codebase on one screen](#-the-core--every-codebase-on-one-screen)
-- [🦌 Broker Agent — your autonomous AI dev/review team](#-headline--broker-agent--your-autonomous-ai-devreview-team)
+- [⚡ BBARIT Agent — the built-in coding agent](#-headline--bbarit-agent--the-built-in-coding-agent)
+- [🦌 Broker Agent — your autonomous AI dev/review team](#-broker-agent--your-autonomous-ai-devreview-team)
 - [Multi-AI terminals](#-multi-ai-terminals)
 - [Terminal & editor](#-terminal--editor)
 - [Knowledge that compounds](#-knowledge-that-compounds)
@@ -53,7 +54,7 @@ Free with GitHub sign-in · auto-updating · built with **Tauri + Rust + React**
 
 Most "AI IDEs" lock you into **one model** and **one workflow**, hide the AI behind a chat box, and still make you babysit every step. Meanwhile your real work is spread across a dozen terminals, a browser, an editor, a notes app, a Kanban board, and three SSH sessions.
 
-**BBARIT collapses all of that into one native terminal** — and then goes further: it puts *every* AI coding agent in the same window, gives them **real tools** (PTY, git, editors, databases, MCP, a browser), and lets two of them **work as an autonomous team** that designs, builds, tests, reviews, and merges — with a knowledge base that gets smarter every session.
+**BBARIT collapses all of that into one native terminal** — and then goes further: it ships **⚡ BBARIT Agent**, its own built-in coding agent that codes, tests and verifies before it's done, puts *every* other AI coding agent in the same window, gives them **real tools** (PTY, git, editors, databases, MCP, a browser), and lets two of them **work as an autonomous team** that designs, builds, tests, reviews, and merges — with a knowledge base that gets smarter every session.
 
 It's not a chat wrapper. It's a **cockpit for shipping with AI**.
 
@@ -112,7 +113,22 @@ BBARIT's killer feature is **effortless multi-project, multi-codebase management
 
 ---
 
-## ✨ Headline — 🦌 Broker Agent — your autonomous AI dev/review team
+## ✨ Headline — ⚡ BBARIT Agent — the built-in coding agent
+
+**BBARIT Agent (빠릿에이전트)** is BBARIT's own coding agent — not a chat box bolted onto an editor, but a real agent with real tools that reads, edits, runs and verifies your code, and won't call a job done until the tests actually pass.
+
+- **✅ It verifies its own work.** Change code but run nothing? The agent refuses to finish — it runs your tests or build, reads the failures, and fixes them. Judged by the exit code, not by the model's word.
+- **🔧 Safe, surgical edits.** Line-anchored editing lands changes on the exact line even as code shifts. It must read a file before editing it, and blind edits to files that changed on disk are blocked.
+- **⏪ Auto-rollback & guardrails.** Every file change is snapshotted — roll back anytime. Catastrophic commands (`rm -rf /`, `mkfs`, raw disk writes) are blocked, and untrusted projects can't be changed silently.
+- **🧭 Understands your codebase.** BM25 + semantic code search, a dependency & impact graph (*what breaks if I change this?*), and a task planner — so it edits with context, not guesswork.
+- **🔌 Any model you want.** OpenAI, Anthropic, Google, Mistral, AWS Bedrock, Azure — 37 providers and 1,000+ models built in. Log in with your ChatGPT or Claude subscription, or run Ollama fully local.
+- **👥 297 experts + parallel subagents.** Hand a task to one of 297 built-in expert personas, or fan work out to several subagents at once. Extend it with MCP servers and lifecycle hooks.
+
+> **Talk to it in the terminal, in the chat panel, or from your phone — it codes, verifies, and rolls back safely.**
+
+---
+
+## 🦌 Broker Agent — your autonomous AI dev/review team
 
 Press one button (🦌) and BBARIT opens **two real terminals** — a **Developer** (e.g. Claude) and a **Reviewer** (e.g. Codex) — and runs a transparent **mechanical broker** between them that mediates the entire dev↔review loop. You give the goal; the pair designs, builds, tests, reviews, and merges. You approve.
 
