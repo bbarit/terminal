@@ -21,6 +21,16 @@ Free with GitHub sign-in · auto-updating · built with **Tauri + Rust + React**
 
 > macOS repo: **[bbarit/terminal](https://github.com/bbarit/terminal)** · Windows repo: **[bbarit/terminal-win](https://github.com/bbarit/terminal-win)**
 
+<br />
+
+### 🎬 Watch the 2-minute demo
+
+<a href="https://youtu.be/PFPHs3V8sPM">
+  <img src="https://raw.githubusercontent.com/bbarit/terminal/main/images/demo-thumb.png" width="760" alt="Watch the BBARIT full demo on YouTube" />
+</a>
+
+**[▶ Watch the full 2-minute demo on YouTube →](https://youtu.be/PFPHs3V8sPM)**
+
 </div>
 
 <!-- SEO: ai vibe coding ide, vibe coding tool, vibe coding tools free, vibe coding ide free, ai terminal, ai terminal for mac, ai terminal for windows, ai terminal app, ai coding ide free, best ai ide for coding free, vibe coding with claude, claude code ide, rust ide, built in rust, octo terminal, octoterminal, bbarit terminal, 빠릿터미널, 빠릿 터미널, 바이브코딩 툴, ai 코딩 툴, 클로드 코드, vibe coding terminal, ai coding agent, claude code terminal, codex terminal, gemini cli, kimi cli, ollama terminal, ai pair programming, autonomous ai coding, ai dev review pair, multi ai terminal, ai agent orchestration, mcp server client, word excel powerpoint editor, docx pptx xlsx editor, tauri rust terminal, xterm webgl, monaco editor ide, knowledge base wiki, kanban gantt, macos terminal, windows terminal, developer productivity, ship with ai -->
@@ -82,9 +92,9 @@ It's not a chat wrapper. It's a **cockpit for shipping with AI**.
 
 ## 🎥 See it in action
 
-[![BBARIT Terminal — intro & demo](https://img.youtube.com/vi/5IBCLQHED3M/hqdefault.jpg)](https://youtu.be/5IBCLQHED3M)
+[![BBARIT — full 2-minute demo](https://raw.githubusercontent.com/bbarit/terminal/main/images/demo-thumb.png)](https://youtu.be/PFPHs3V8sPM)
 
-▶️ **[Watch the intro & demo](https://youtu.be/5IBCLQHED3M)**
+▶️ **[Watch the full 2-minute demo](https://youtu.be/PFPHs3V8sPM)** &nbsp;·&nbsp; [intro clip](https://youtu.be/5IBCLQHED3M)
 
 ### 📣 As featured by creators
 
@@ -372,6 +382,6 @@ Auto-updates are built in (Tauri updater) — you'll always get the latest.
 **BBARIT Terminal (빠릿터미널) — the free AI vibe coding IDE, terminal & coding agent, built 100% in Rust.**
 Maintained by Tenmiles Inc. · Built for developers who ship with AI.
 
-🍎 [bbarit/terminal](https://github.com/bbarit/terminal) · 🪟 [bbarit/terminal-win](https://github.com/bbarit/terminal-win) · 🌐 [bbarit.com](https://bbarit.com) · ▶️ [Demo](https://youtu.be/5IBCLQHED3M)
+🍎 [bbarit/terminal](https://github.com/bbarit/terminal) · 🪟 [bbarit/terminal-win](https://github.com/bbarit/terminal-win) · 🌐 [bbarit.com](https://bbarit.com) · ▶️ [Demo](https://youtu.be/PFPHs3V8sPM)
 
 </div>
